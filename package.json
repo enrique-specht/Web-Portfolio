@@ -9,7 +9,8 @@
     "verify": "npm run lint && npm run test-prod && npm run build",
     "test": "ng test",
     "test-prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +46,7 @@
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "eslint": "^8.56.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
