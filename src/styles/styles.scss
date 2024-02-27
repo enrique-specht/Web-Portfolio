@@ -2,3 +2,15 @@
 @import './bootstrap.scss';
 
 // Styles
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.highlighted {
+  color: $highlight;
+}

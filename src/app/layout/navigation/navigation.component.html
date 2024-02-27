@@ -1,0 +1,64 @@
+<nav
+  class="d-flex flex-column h-100 shadow-lg justify-content-between p-3"
+  [attr.open]="navbarOpen">
+  <a
+    id="nav-toggle"
+    (click)="navbarOpen = !navbarOpen"
+    (keyup)="navbarOpen = !navbarOpen"
+    aria-disabled="true">
+    <i *ngIf="navbarOpen; else navClose" class="bi bi-x-lg"></i>
+    <ng-template #navClose><i class="bi bi-list"></i></ng-template>
+  </a>
+
+  <div
+    id="nav-header"
+    class="d-flex flex-column align-items-center text-center">
+    <h4 class="highlighted">Enrique Specht</h4>
+    <span>{{ 'navigation.web-developer' | translate }}</span>
+  </div>
+
+  <ul class="nav-item-wrapper">
+    <li>
+      <a id="nav-home" class="active">
+        <i class="bi bi-house-door me-3"></i>
+        <span>{{ 'navigation.home' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a id="nav-about-me">
+        <i class="bi bi-person me-3"></i>
+        <span>{{ 'navigation.about-me' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a id="nav-cv">
+        <i class="bi bi-clock-history me-3"></i>
+        <span>{{ 'navigation.cv' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a id="nav-experience">
+        <i class="bi bi-speedometer me-3"></i>
+        <span>{{ 'navigation.experience' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a id="nav-portfolio">
+        <i class="bi bi-file-earmark-code me-3"></i>
+        <span>{{ 'navigation.portfolio' | translate }}</span>
+      </a>
+    </li>
+  </ul>
+
+  <div
+    id="nav-footer"
+    class="d-flex flex-column justify-content-center align-items-center">
+    <app-language-switch></app-language-switch>
+    <a [href]="links.github" class="mt-3">
+      <i class="bi bi-github"></i>
+    </a>
+    <small class="text-center mt-1">
+      Copyright © {{ copyrightYear }} Enrique Specht
+    </small>
+  </div>
+</nav>

@@ -1,0 +1,19 @@
+<span>
+  <a
+    class="language-picker d-inline-block"
+    [class.selected]="this.translateService.currentLang === 'de'"
+    (click)="setLanguage('de')"
+    (keyup)="setLanguage('de')"
+    aria-disabled="true">
+    {{ 'language-switch.de' | translate }}
+  </a>
+  <span class="me-1 ms-1">|</span>
+  <a
+    class="language-picker d-inline-block"
+    [class.selected]="this.translateService.currentLang === 'en'"
+    (click)="setLanguage('en')"
+    (keyup)="setLanguage('en')"
+    aria-disabled="true">
+    {{ 'language-switch.en' | translate }}
+  </a>
+</span>

@@ -1,1 +1,14 @@
-{}
+{
+  "navigation": {
+    "web-developer": "Web-Entwickler",
+    "home": "Start",
+    "about-me": "Über Mich",
+    "cv": "Lebenslauf",
+    "experience": "Erfahrung",
+    "portfolio": "Portfolio"
+  },
+  "language-switch": {
+    "de": "DE",
+    "en": "EN"
+  }
+}
